@@ -1,19 +1,17 @@
-
-ID,kérdések
-
-1;Melyik évben született Vágó István kvízmester?
-2;A Maradj talpon! egy licencelt tévés vetélkedő. Melyik országban találták ki ezt a műsort?
-3;Hány millió forint volt a főnyeremény összege a Legyen Ön is milliomos! első magyarországi adásakor?
-4;Melyik országban sugározták először a Legyen Ön is milliomos! vetélkedőt?
-5;Hány kérdésre kell ahhoz helyesen válaszolni, hogy elvihesse a játékos a főnyereményt a Legyen Ön is milliomos! tévés vetélkedőben?
-6;Melyik televíziós vetélkedőt nem vezette Vágó István?
-7;Melyik évben indult a Honfoglaló című kvízjáték televíziós verziója?
-8;Kik voltak a műsorvezetői a Pókerarc című tévés vetélkedőnek?
-9;A Legyen Ön is milliomos! kvízvetélkedő melyik országbeli változatának fődíját nyeri meg a Gettómilliomos című film főszereplője?
-10;Hány játékos játszhat egyszerre egymás ellen a Honfoglaló kvízjátékban?
-11;Melyik évben adtak először Maradj talpon! vetélkedőműsort magyar televízióban?
-12;Ki vezette a Most vagy soha! című kvízműsort a TV2-n?
-13;Hány válaszlehetőségből kellett választania az utolsó kérdésig eljutó versenyzőnek a Most vagy soha! kvízműsorban?
-14;Kik vetélkedhetnek egymással A Géniusz című kvízműsorban?
-15;Hány táskával indul az Áll az alku kvízvetélkedő?
-16;Hogy hívják ma a Honfoglaló játékot? 
+kérdések;válaszok1;válaszok2;válaszok3;válaszok4;helyes válasz;
+Melyik évben született Vágó István kvízmester?;1949. február 14.-ben született.;1967. január 9.;1957. március 26.;1987. október 19.
+A Maradj talpon! egy licencelt tévés vetélkedő. Melyik országban találták ki ezt a műsort?;Izraelben;Lengyelországban;Magyarországon;Amerikában
+Hány millió forint volt a főnyeremény összege a Legyen Ön is milliomos! első magyarországi adásakor?;25 millió forint;30 millió forint;40 millió forint;50 millió forint
+Melyik országban sugározták először a Legyen Ön is milliomos! vetélkedőt?;Egyesült Királyság;Magyarországon;Horvátország;Oroszország
+Hány kérdésre kell ahhoz helyesen válaszolni, hogy elvihesse a játékos a főnyereményt a Legyen Ön is milliomos! tévés vetélkedőben?;15 kérdésre;20 kérdésre;25 kérdésre;30 kérdésre
+Melyik televíziós vetélkedőt nem vezette Vágó István?;kapcsoltam;a fele sem igaz;átVágó;Van benne valami
+Melyik évben indult a Honfoglaló című kvízjáték televíziós verziója?;2017;2016;2018;2019
+Kik voltak a műsorvezetői a Pókerarc című tévés vetélkedőnek?;Vágó István és Sebestyén Balázs;Ördög Nóra és Majka;Till Attila és Kasza Tibi;Istenes Bence és Csobot Adél
+A Legyen Ön is milliomos! kvízvetélkedő melyik országbeli változatának fődíját nyeri meg a Gettómilliomos című film főszereplője?;India;Kolumbia;Egyiptom;Brazília
+Hány játékos játszhat egyszerre egymás ellen a Honfoglaló kvízjátékban?;3 játékos;4 játékos;5 játékos;6 játékos
+Melyik évben adtak először Maradj talpon! vetélkedőműsort magyar televízióban?;2011-ben.;2012-ben.;2013-ban.;2014-ben.
+Ki vezette a Most vagy soha! című kvízműsort a TV2-n?;Jakupcsek Gabriella;Kasza Tibi;Gundel Takács Gábor;Sebestyén Balázs
+Hány válaszlehetőségből kellett választania az utolsó kérdésig eljutó versenyzőnek a Most vagy soha! kvízműsorban?;20;15;10;5;
+Kik vetélkedhetnek egymással A Géniusz című kvízműsorban?;celebek;történészek;kvíznyertesek;gyerekek
+Hány táskával indul az Áll az alku kvízvetélkedő?;10 táskával;15 táskával;20 táskával;25 táskával
+Hogy hívják ma a Honfoglaló játékot?;triviador;Kahoot;Kvizoid;QuizUp
