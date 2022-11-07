@@ -9,7 +9,7 @@ class Question:
 question_list = []
 
 def make_list():
-    file = open('kerdesek.csv', 'r', encoding='UTF-8')
+    file = open('IKTkerdesek.csv', 'r', encoding='UTF-8')
     file.readline
     for row in file:
         splitted_data = row.split(';')
