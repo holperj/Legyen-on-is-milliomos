@@ -4,8 +4,9 @@ from adatok import result
 def loadData():
     results = []
     
-    file = open("IKTkerdesek.csv","r",encoding="utf-8")
+    file = open("kerdesek.csv","r",encoding="utf-8")
     
+    file.readline()
     
     for row in file:
         splitted = row.split(";")
@@ -15,8 +16,7 @@ def loadData():
         res.valasz2 = splitted[2]
         res.valasz3 = splitted[3]
         res.valasz4 = splitted[4]
-        
-       
+        res.helyes = splitted[5]
 
         results.append(res)
 
