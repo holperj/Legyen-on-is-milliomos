@@ -4,4 +4,4 @@ class result:
     valasz2 = ""
     valasz3 = ""
     valasz4 = ""
-    
+    helyes = ""
