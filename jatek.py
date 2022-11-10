@@ -16,8 +16,9 @@ def randomkerdes():
             print(f"B, {b}")
             print(f"C, {c}")
             print(f"D, {d}")
-            y = input("Írja be a válaszát: ")
-                
+            y = input("Írja be a válaszát: ").upper
+    return y, a, b, c, d
+
 def random_valasz(x):
     valaszok = []
     valaszok.append(x.valasz1)
@@ -36,4 +37,5 @@ def random_valasz(x):
     d = valaszok[0]
     return a, b, c, d
 
-
+def valasz_elfogad():
+    y, a, b, c, d = randomkerdes()
