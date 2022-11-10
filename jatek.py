@@ -1,4 +1,5 @@
 import random
+from random import randint
 from beolvas import loadData
 osszesAdat = loadData()
 
@@ -9,25 +10,30 @@ def randomkerdes():
         print("Vége a játéknak.")
     else:
         if len(osszesAdat) > 7:
+            a, b, c, d = random_valasz(x)
             print(f"{x.kerdes}")
-            print(f"A, {random_valasz(x)}")
-            print(f"B, {x.valasz2}")
-            print(f"C, {x.valasz3}")
-            print(f"D, {x.valasz4}")
+            print(f"A, {a}")
+            print(f"B, {b}")
+            print(f"C, {c}")
+            print(f"D, {d}")
             y = input("Írja be a válaszát: ")
                 
 def random_valasz(x):
     valaszok = []
-    valaszok.append(x.kerdes1, x.kerdes2, x.kerdes3, x.kerdes4)
-    A = random(1, 4)   
-    a = valaszok(A)
-    valaszok.remove(A)
-    b = valaszok(B)
-    valaszok.remove(B)
-    c = valaszok(C)
-    valaszok.remove(C)
-    d = valaszok(1)
-    valaszok.remove
+    valaszok.append(x.valasz1)
+    valaszok.append(x.valasz2)
+    valaszok.append(x.valasz3)
+    valaszok.append(x.valasz4)
+    A = randint(0, 3)   
+    a = valaszok[A]
+    valaszok.remove(a)
+    B = randint(0, 2)
+    b = valaszok[B]
+    valaszok.remove(b)
+    C = randint(0, 1)
+    c = valaszok[C]
+    valaszok.remove(c)
+    d = valaszok[0]
     return a, b, c, d
 
 
