@@ -1,9 +1,9 @@
 import random
-from menu import menu
+from menu import menu, loggo_kiir
 from beolvas import loadData
 
 
-
+loggo_kiir()
 osszesAdat = loadData()
 
 

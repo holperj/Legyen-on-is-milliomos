@@ -7,3 +7,9 @@ def menu():
         option = int(input('Válasszon a fentiek közül: '))
     return option
 
+def loggo_kiir():
+    file = open("logo.txt","r",encoding="utf-8")
+    
+    for row in file:
+        print(row.strip('\n'))
+    file.close
