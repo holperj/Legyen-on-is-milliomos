@@ -3,6 +3,12 @@ from random import randint
 from beolvas import loadData
 osszesAdat = loadData()
 
+def jatekmenet():
+    a = True
+    while a != False:
+        a = randomkerdes()
+    return False
+
 def randomkerdes():
     x = random.choice(osszesAdat)
     osszesAdat.remove(x)
@@ -10,32 +16,38 @@ def randomkerdes():
         print("Vége a játéknak.")
     else:
         if len(osszesAdat) > 7:
-            a, b, c, d = random_valasz(x)
+            valaszok1, helyes = random_valasz(x)
             print(f"{x.kerdes}")
-            print(f"A, {a}")
-            print(f"B, {b}")
-            print(f"C, {c}")
-            print(f"D, {d}")
-            y = input("Írja be a válaszát: ").upper
-    return y, a, b, c, d
+            print(f"A, {valaszok1[0]}")
+            print(f"B, {valaszok1[1]}")
+            print(f"C, {valaszok1[2]}")
+            print(f"D, {valaszok1[3]}")
+            y = ''
+            valaszok = ['A', 'B', 'C', 'D']
+            while y not in valaszok:
+                y = input("Írja be a válaszát: ").upper()
+                for i in range(len(valaszok)):
+                    if valaszok[i] == y:
+                        if valaszok[i] != valaszok[helyes]:
+                            return False
+            return True
 
 def random_valasz(x):
     valaszok = []
+    helyes_index = ''
+    helyes_valasz = x.valasz1
     valaszok.append(x.valasz1)
     valaszok.append(x.valasz2)
     valaszok.append(x.valasz3)
     valaszok.append(x.valasz4)
-    A = randint(0, 3)   
-    a = valaszok[A]
-    valaszok.remove(a)
-    B = randint(0, 2)
-    b = valaszok[B]
-    valaszok.remove(b)
-    C = randint(0, 1)
-    c = valaszok[C]
-    valaszok.remove(c)
-    d = valaszok[0]
-    return a, b, c, d
+    valaszok_sorrendben = []
+    valaszok_eredeti = valaszok
+    for i in range(len(valaszok_eredeti)):
+        a = randint(0, len(valaszok)-1)
+        sor = valaszok[a]
+        valaszok.remove(sor)
+        valaszok_sorrendben.append(sor)
+        if sor == helyes_valasz:
+            helyes_index = i
 
-def valasz_elfogad():
-    y, a, b, c, d = randomkerdes()
+    return valaszok_sorrendben, helyes_index
