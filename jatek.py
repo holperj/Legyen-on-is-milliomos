@@ -26,6 +26,8 @@ def randomkerdes():
             valaszok = ['A', 'B', 'C', 'D']
             while y not in valaszok:
                 y = input("Írja be a válaszát: ").upper()
+                if y not in valaszok:
+                    print("Nincs ilyen választási lehetőség.")
                 for i in range(len(valaszok)):
                     if valaszok[i] == y:
                         if valaszok[i] != valaszok[helyes]:
