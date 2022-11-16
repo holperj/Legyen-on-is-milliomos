@@ -5,3 +5,4 @@ class result:
     valasz3 = ""
     valasz4 = ""
     helyes = ""
+    nehezseg = ""

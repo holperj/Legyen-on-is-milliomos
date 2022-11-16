@@ -15,7 +15,7 @@ def randomkerdes():
     if len(osszesAdat) == 0:
         print("Vége a játéknak.")
     else:
-        if len(osszesAdat) > 7:
+        if len(osszesAdat) < 7:
             valaszok1, helyes = random_valasz(x)
             print(f"{x.kerdes}")
             print(f"A, {valaszok1[0]}")

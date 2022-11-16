@@ -17,6 +17,7 @@ def loadData():
         res.valasz3 = splitted[3]
         res.valasz4 = splitted[4]
         res.helyes = splitted[5]
+        res.nehezseg = splitted[6]
 
         results.append(res)
 
