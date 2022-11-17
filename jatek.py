@@ -6,11 +6,17 @@ osszesAdat = loadData()
 def jatekmenet():
     a = True
     while a != False:
-        a = randomkerdes()
+        a = randomkerdes('konnyu')
     return False
 
-def randomkerdes():
-    x = random.choice(osszesAdat)
+def kiir():
+    for a in osszesAdat:
+        print(f'{a.kerdes} - {a.nehezseg}')
+
+def randomkerdes(nehezseg): 
+    x = random.choice(osszesAdat)  
+    while x.nehezseg != nehezseg:
+        x = random.choice(osszesAdat)
     osszesAdat.remove(x)
     if len(osszesAdat) == 0:
         print("Vége a játéknak.")

@@ -9,7 +9,7 @@ def loadData():
     file.readline()
     
     for row in file:
-        splitted = row.split(";")
+        splitted = row.strip().split(";")
         res = result()
         res.kerdes = splitted[0]
         res.valasz1 = splitted[1]
