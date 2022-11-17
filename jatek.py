@@ -5,8 +5,18 @@ osszesAdat = loadData()
 
 def jatekmenet():
     a = True
-    while a != False:
-        a = randomkerdes('konnyu')
+    x = 0
+    y = 'konnyu'
+    z = 'nehez'
+    while a != False and x !=15:
+        if x < 7:
+            a = randomkerdes(y)
+            x += 1
+            print(x)
+        else: 
+            a = randomkerdes(z)
+            x += 1
+
     return False
 
 def kiir():
