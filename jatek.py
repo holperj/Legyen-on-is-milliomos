@@ -8,15 +8,13 @@ def jatekmenet():
     x = 0
     y = 'konnyu'
     z = 'nehez'
-    while a != False and x !=15:
+    while a != False and x !=3:
         if x < 7:
             a = randomkerdes(y)
             x += 1
-            print(x)
         else: 
             a = randomkerdes(z)
             x += 1
-
     return False
 
 def kiir():
@@ -31,24 +29,23 @@ def randomkerdes(nehezseg):
     if len(osszesAdat) == 0:
         print("Vége a játéknak.")
     else:
-        if len(osszesAdat) < 7:
-            valaszok1, helyes = random_valasz(x)
-            print(f"{x.kerdes}")
-            print(f"A, {valaszok1[0]}")
-            print(f"B, {valaszok1[1]}")
-            print(f"C, {valaszok1[2]}")
-            print(f"D, {valaszok1[3]}")
-            y = ''
-            valaszok = ['A', 'B', 'C', 'D']
-            while y not in valaszok:
-                y = input("Írja be a válaszát: ").upper()
-                if y not in valaszok:
-                    print("Nincs ilyen választási lehetőség.")
-                for i in range(len(valaszok)):
-                    if valaszok[i] == y:
-                        if valaszok[i] != valaszok[helyes]:
-                            return False
-            return True
+        valaszok1, helyes = random_valasz(x)
+        print(f"{x.kerdes}")
+        print(f"A, {valaszok1[0]}")
+        print(f"B, {valaszok1[1]}")
+        print(f"C, {valaszok1[2]}")
+        print(f"D, {valaszok1[3]}")
+        y = ''
+        valaszok = ['A', 'B', 'C', 'D']
+        while y not in valaszok:
+            y = input("Írja be a válaszát: ").upper()
+            if y not in valaszok:
+                print("Nincs ilyen választási lehetőség.")
+            for i in range(len(valaszok)):
+                if valaszok[i] == y:
+                    if valaszok[i] != valaszok[helyes]:
+                        return False
+        return True
 
 def random_valasz(x):
     valaszok = []

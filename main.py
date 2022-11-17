@@ -11,9 +11,10 @@ while valasz != 3:
     if valasz == 1:
         print('Játék indítása')
         a = ''
-        while a != False:
+        x = 0
+        while a != False and x != 3:
             a = jatekmenet()
-
+            x += 1
         print("Vége a játéknak.")
         
     elif valasz == 2:
