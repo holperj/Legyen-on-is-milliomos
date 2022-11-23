@@ -1,5 +1,5 @@
 import random
-from adatok import result
+from adatok import result, ertek
 
 def loadData():
     results = []
