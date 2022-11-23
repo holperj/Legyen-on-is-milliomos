@@ -1,6 +1,7 @@
 import random
 from random import randint
 from beolvas import loadData
+from adatok import ertek
 osszesAdat = loadData()
 
 def jatekmenet():
@@ -11,9 +12,11 @@ def jatekmenet():
     while a != False and x !=3:
         if x < 7:
             a = randomkerdes(y)
+            print(f"\nEddigi nyeremény: {ertek[x]}\n")
             x += 1
         else: 
             a = randomkerdes(z)
+            print(f"\nEddigi nyeremény: {ertek[x]}\n")
             x += 1
     return False
 
