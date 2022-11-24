@@ -24,3 +24,21 @@ def loadData():
     file.close()
 
     return results
+
+
+def loaddata2():
+    results = []
+    
+    file = open("eredmenyek.csv","r",encoding="utf-8")
+    
+    for row in file:
+        splitted = row.strip().split(";")
+        res = result()
+        res.nev = splitted[0]
+        res.pont = splitted[1]
+
+        results.append(res)
+
+    file.close()
+
+    return results
