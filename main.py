@@ -1,6 +1,7 @@
 from jatek import jatekmenet
 from menu import menu, loggo_kiir
 from beolvas import loadData
+from adatok import ertek
 
 
 loggo_kiir()
@@ -10,18 +11,18 @@ while valasz != 3:
     valasz = int(menu())
     if valasz == 1:
         print('Játék indítása')
-        a = ''
-        x = 0
-        while a != False and x != 3:
+        a = [True, 0]
+        y = 0
+        while a[0] != False and y != 3:
             a = jatekmenet()
-            x += 1
-        print("Vége a játéknak.")
+            y += 1
+        print(f"Vége a játéknak. \n Nyereményed: {ertek[a[1]]}")
         
     elif valasz == 2:
         print('legjobb eredmény:')
 
     elif valasz == 3:
-        print("A játéknak vége. A pontszámod: {}")
+        print(f"A játéknak vége.")
 
 
 
