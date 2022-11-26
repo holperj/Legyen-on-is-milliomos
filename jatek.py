@@ -37,11 +37,11 @@ def randomkerdes(nehezseg):
         print("Vége a játéknak.")
     else:
         valaszok1, helyes = random_valasz(x)
-        print(f"{x.kerdes}")
+        print(f"{x.kerdes}\n")
         print(f"A, {valaszok1[0]}")
         print(f"B, {valaszok1[1]}")
         print(f"C, {valaszok1[2]}")
-        print(f"D, {valaszok1[3]}")
+        print(f"D, {valaszok1[3]}\n")
         y = ''
         valaszok = ['A', 'B', 'C', 'D']
         while y not in valaszok:
