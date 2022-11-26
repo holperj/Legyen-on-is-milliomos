@@ -4,7 +4,7 @@ def menu():
         print("-----------------------------------------")
         print('1 - Játék')
         print('2 - Eredmények')
-        print('3 - Válasz hozzáadása')
+        print('3 - Kérdés hozzáadása')
         print('0 - Kilépés')
         print("-----------------------------------------")
         option = int(input('Válasszon a fentiek közül: '))

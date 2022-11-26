@@ -1,7 +1,8 @@
 import random
 from random import randint
-from beolvas import loadData
 from adatok import ertek
+from beolvas import loadData
+
 osszesAdat = loadData()
 
 def jatekmenet():

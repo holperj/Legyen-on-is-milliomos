@@ -1,11 +1,12 @@
-from jatek import jatekmenet
+from jatek import jatekmenet, osszesAdat
 from menu import menu, loggo_kiir, menu_2
-from beolvas import loadData, loaddata2
-from adatok import ertek, adatfelvetel, eredmeny, hozzaadas, search_by_name
+from beolvas import loadData, loaddata2, adatfelvetel, eredmeny, eredmeny_hozzaadas, search_by_name, kerdes_hozzaad, kerdes_felvetel
+from adatok import ertek
 
 
 loggo_kiir()
 eredmeny = loaddata2()
+
 
 valasz = -1
 while valasz != 0:
@@ -24,7 +25,7 @@ while valasz != 0:
         print("-----------------------------------------")
         adat = adatfelvetel(a[1])
         eredmeny.append(adat)
-        hozzaadas(adat)
+        eredmeny_hozzaadas(adat)
 
     elif valasz == 2:
         valasz2 = -1
@@ -35,14 +36,20 @@ while valasz != 0:
                 print(f'Eredmények:\n')
                 for item in eredmeny:
                     print(f"{item.nev} : {item.pont}Ft nyeremény.")
-                print("-----------------------------------------")
 
             elif valasz2 == 2:
+                print("-----------------------------------------")
                 nev = input('Adja meg a keresett nevet: ')
                 talalt = search_by_name(eredmeny, nev)
                 if talalt != False:
                     for item in talalt:
-                        print(f'{item.nev} : {item.pont}Ft nyeremény.') 
+                        print("-----------------------------------------")
+                        print(f'{item.nev} : {item.pont}Ft nyeremény.\n') 
+
+    elif valasz == 3:
+        adat = kerdes_felvetel()
+        osszesAdat.append(adat)
+        kerdes_hozzaad(adat)
 
     elif valasz == 0:
         print(f"A játéknak vége.")
