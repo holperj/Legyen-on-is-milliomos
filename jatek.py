@@ -12,7 +12,7 @@ def jatekmenet():
     z = 'nehez'
     while a != False and x !=15:
         if x < 7:
-            a = randomkerdes(y)
+            a = randomkerdes(y)         
             if a == True:
                 print(f"\nEddigi nyeremény: {ertek[x]}Ft.\n")
                 print("-----------------------------------------")
