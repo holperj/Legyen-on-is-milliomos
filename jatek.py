@@ -14,13 +14,13 @@ def jatekmenet():
         if x < 7:
             a = randomkerdes(y)
             if a == True:
-                print(f"\nEddigi nyeremény: {ertek[x]}\n")
+                print(f"\nEddigi nyeremény: {ertek[x]}Ft.\n")
                 print("-----------------------------------------")
                 x += 1
         else: 
             a = randomkerdes(z)
             if a == True:
-                print(f"\nEddigi nyeremény: {ertek[x]}\n")
+                print(f"\nEddigi nyeremény: {ertek[x]}Ft.\n")
                 print("-----------------------------------------")
                 x += 1
     return False, x

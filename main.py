@@ -21,7 +21,7 @@ while valasz != 0:
             a = jatekmenet()
             if a[0] == True:
                 y+=1
-        print(f"Vége a játéknak. \n Nyereményed: {ertek[a[1]]}")
+        print(f"Vége a játéknak. \n Nyereményed: {ertek[a[1]]} Ft.")
         print("-----------------------------------------")
         adat = adatfelvetel(a[1])
         eredmeny.append(adat)
@@ -44,7 +44,7 @@ while valasz != 0:
                 if talalt != False:
                     for item in talalt:
                         print("-----------------------------------------")
-                        print(f'{item.nev} : {item.pont}Ft nyeremény.\n') 
+                        print(f'{item.nev} : {item.pont}Ft a nyeremény.\n') 
 
     elif valasz == 3:
         adat = kerdes_felvetel()
