@@ -21,9 +21,14 @@ while valasz != 0:
             a = jatekmenet()
             if a[0] == True:
                 y+=1
-        print(f"Vége a játéknak. \n Nyereményed: {ertek[a[1]]} Ft.")
+        if a[0] == False:
+            print(f"Vége a játéknak. \n Nyereményed: {ertek[a[1]]} Ft.")
+            adat = adatfelvetel(a[1])
+        if y == 15:
+            nyermeny_index = a[1] + 1
+            print(f'Nyertél! \n Nyereményed: {ertek[nyermeny_index]} Ft.')
+            adat = adatfelvetel(nyermeny_index)
         print("-----------------------------------------")
-        adat = adatfelvetel(a[1])
         eredmeny.append(adat)
         eredmeny_hozzaadas(adat)
 

@@ -6,7 +6,7 @@ from beolvas import loadData
 osszesAdat = loadData()
 
 def jatekmenet():
-    a = True
+    a = ''
     x = 0
     y = 'konnyu'
     z = 'nehez'
@@ -14,13 +14,13 @@ def jatekmenet():
         if x < 7:
             a = randomkerdes(y)         
             if a == True:
-                print(f"\nEddigi nyeremény: {ertek[x]}Ft.\n")
+                print(f"\nEddigi nyeremény: {ertek[x+1]}Ft.\n")
                 print("-----------------------------------------")
                 x += 1
         else: 
             a = randomkerdes(z)
             if a == True:
-                print(f"\nEddigi nyeremény: {ertek[x]}Ft.\n")
+                print(f"\nEddigi nyeremény: {ertek[x+1]}Ft.\n")
                 print("-----------------------------------------")
                 x += 1
     return False, x
